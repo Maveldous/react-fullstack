@@ -1,0 +1,16 @@
+.filters {
+  width: 75%;
+  padding-top: 24px;
+
+  &__row {
+    margin: 0 0 16px;
+
+    &-search-btn, &-clear-btn {
+      margin-right: 12px;
+    }
+
+    &-show-btn {
+      white-space: nowrap;
+    }
+  }
+}

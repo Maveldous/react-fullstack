@@ -1,0 +1,9 @@
+@import './normalize';
+@import './reset';
+@import '../fonts/fonts.scss';
+
+html {
+  font-family: 'Roboto', sans-serif;
+  font-style: 14px;
+  font-weight: 400;
+}

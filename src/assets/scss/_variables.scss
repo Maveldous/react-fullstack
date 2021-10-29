@@ -1,0 +1,99 @@
+$bg22: #f2f3f9;
+$text-title: #272d45;
+$text-title-2: #4c5670;
+$text-grey-default: #818db7;
+$link: #2859d6;
+$error: #ff464f;
+$lines: #ebedf4;
+$blue: #1336ee;
+$light-red: #ffe9ea;
+$success: #25c685;
+$light-purple: #d7d5fb;
+
+$blue-shadow: rgba(38, 85, 139, 0.08);
+$grey-shadow: rgba(54, 125, 148, 0.08);
+
+// colors from TO
+$white-grey: #f4f4f4;
+$white-light-grey: #f2f2f2;
+$subtle-grey: #e5e5e5;
+$light-grey: #d4d9dc;
+$very-light-grey: #f6f6f6;
+$light-brown-grey: #c4c4c4;
+$steel-grey: #5e6979;
+$dusty-grey: #979797;
+$almost-black: #233239;
+$light-almost-black: #39464d;
+$cloudy-grey: #aeb6ba;
+$light-white-blue: #f0faff;
+$white-blue: #ebf2f8;
+$grey-blue: #e7eff6;
+$blue: #41c2ff;
+$dark-blue: #0a5aa4;
+$purple: #b245e5;
+$white-purple: #f7ecfc;
+$red: #c32e52;
+$brick-red: #9a3336;
+$white-red: #cb1939;
+$dark-red: rgba(154, 51, 54, 0.6);
+$pink: #cc5357;
+$white-green: #f0f8f1;
+$green: #399e50;
+$white-orange: #fdf2eb;
+$orange: #ea5806;
+$honey-yellow: #f7aa16;
+$dark-honey-yellow: #efac00;
+$golden-yellow: #ffcc67;
+$yellow: #ffd231;
+$white-yellow: #fef8eb;
+$white: #fff;
+$light-yellow: rgba(255, 210, 49, 0.25);
+$light-orange: rgba(234, 88, 6, 0.15);
+$light-green: rgba(57, 158, 80, 0.15);
+$grey-shadow: rgba(152, 152, 152, 0.1);
+$light-grey-shadow: rgba(181, 181, 181, 0.32);
+$almost-black-shadow: rgba(91, 91, 91, 0.2);
+
+// colors from Dominant
+$dark-indigo: #071a33;
+$azure: #008bff;
+$marigold: #fb0;
+$green: #37ad1c;
+$light-burgundy: #c32e52;
+$blue-grey: #91959f;
+$light-blue-grey: #c3c9cd;
+$boring-green: #5cb85c;
+$true-green: #009500;
+$great-green: #00af00;
+$simple-green: #008000;
+$slime-green: #88d105;
+$light-khaki: #e6f99d;
+$charcoal-grey: #323c47;
+$charcoal-grey-light: #2d3d53;
+$charcoal-grey-56: rgba($charcoal-grey, 0.56);
+$pale-blue: #e4e6e7;
+$pale-red: #f9f9f9;
+$black-16: #d6d6d6;
+$light-blue: #03a9f4;
+$dark-blue: #0073d1;
+$error: $light-burgundy;
+$placeholder-color: rgba($charcoal-grey, 0.4);
+$divine-blue: #2689d8ba;
+$deep-blue: #008cff;
+$bright-yellow: #ffe600;
+$grey-subtitle: #8c9298;
+
+// Media
+$media-sm-min: 450px; // (min-width: 450px)
+$media-md-min: 1024px; // (min-width: 1024px)
+$media-lg-min: 1224px; // (min-width: 1224px)
+$media-xl-min: 1440px; // (min-width: 1440px)
+
+:export {
+  azure: $azure;
+  subtitleGrey: $grey-subtitle;
+  charcoalGrey: $charcoal-grey;
+  red: $red;
+  lightBlueGrey: $light-blue-grey;
+  trueGreen: $true-green;
+}

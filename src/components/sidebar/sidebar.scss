@@ -1,0 +1,39 @@
+@import '../../assets/scss/variables';
+
+.application__wrapper {
+  padding-left: 230px;  
+}
+
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  width: 230px;
+
+  background: $dark-indigo;
+
+  &__logo {
+    border-bottom: 1px solid rgba(195,201,205,.24);
+    padding: 8px 17px 12px 5px;
+
+    &-img {
+      display: block;
+      width: 100px;
+    }
+  }
+
+  &__list {
+    margin-top: 20px;
+  }
+
+  &__item {
+    color: $light-blue-grey;
+    padding: 8px 20px;
+    cursor: pointer;
+
+    &:hover {
+      background-color: rgba($light-blue, .2);
+    }
+  }
+}
