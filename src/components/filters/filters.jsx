@@ -1,37 +1,37 @@
 import { useState } from "react";
 import useInput from "@hooks/useInput";
 
+import CInput from "@components/common/cInput";
+import Datepicker from "@components/common/datepicker";
+
 function Filters(params) {
 
-  const [isSubFiltersVisible, setSubFiltersVisible] = useState();
-  const inputName = useInput('');
-  let subFilters = null;
+  const [isSubFiltersVisible, setSubFiltersVisible] = useState(false);
 
+  const [date, setDate] = useState('');
+  const inputSearch = useInput('');
+  const inputCompany = useInput('');
+  const inputRoad = useInput('');
+
+  const subFilters = isSubFiltersVisible ? 
+    <SubFilters
+      companyInputBind={inputCompany.bind}
+      roadInputBind={inputRoad.bind}
+    />
+    : null
+  
   const toggleFilters = () => {
     setSubFiltersVisible((state) => !state)
-  }
-
-  if(isSubFiltersVisible) {
-    subFilters = (
-      <div className="row filters__row">
-        <div className="col-4">
-          <input type="text" className="form-control" />
-        </div>
-        <div className="col-4">
-          <input type="text" className="form-control" />
-        </div>
-      </div>
-    )
   }
 
   return (
     <div className="filters">
       <div className="row filters__row">
         <div className="col-4">
-          <input {...inputName.bind} type="text" className="form-control" />
+          <Datepicker onDayChange={(eventDate) => setDate(eventDate)} />
         </div>
         <div className="col-4">
-          <input type="text" className="form-control" />
+          <CInput {...inputSearch.bind} type="text" placeholder="Enter query" />
         </div>
         <div className="d-flex col-3">
           <button className="btn btn-primary filters__row-search-btn">Search</button>
@@ -44,7 +44,20 @@ function Filters(params) {
           </button>
         </div>
       </div>
-      {subFilters}
+      { subFilters }
+    </div>
+  )
+}
+
+function SubFilters({companyInputBind, roadInputBind}) {
+  return (
+    <div className="row filters__row">
+      <div className="col-4">
+        <CInput {...companyInputBind} type="text" placeholder="Enter company" />
+      </div>
+      <div className="col-4">
+        <CInput {...roadInputBind} type="text" placeholder="Enter road" />
+      </div>
     </div>
   )
 }
