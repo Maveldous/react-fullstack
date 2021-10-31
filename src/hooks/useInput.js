@@ -12,6 +12,7 @@ const useInput = (inputValue) => {
       value,
       onChange
     },
+    setValue,
   }
 }
 
