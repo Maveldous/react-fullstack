@@ -1,5 +1,6 @@
 import { useState } from "react";
 import useInput from "@hooks/useInput";
+// import useFilters from "./useFilters";
 
 import CInput from "@components/common/cInput";
 import Datepicker from "@components/common/datepicker";
@@ -27,10 +28,10 @@ function Filters(params) {
   return (
     <div className="filters">
       <div className="row filters__row">
-        <div className="col-4">
-          <Datepicker onDayChange={(eventDate) => setDate(eventDate)} />
+        <div className="col-4 ps-0">
+          <Datepicker onDayChange={(eventDate) => setDate(eventDate)}  />
         </div>
-        <div className="col-4">
+        <div className="col-4 ps-0">
           <CInput {...inputSearch.bind} type="text" placeholder="Enter query" />
         </div>
         <div className="d-flex col-3">
@@ -52,10 +53,10 @@ function Filters(params) {
 function SubFilters({companyInputBind, roadInputBind}) {
   return (
     <div className="row filters__row">
-      <div className="col-4">
+      <div className="col-4 ps-0">
         <CInput {...companyInputBind} type="text" placeholder="Enter company" />
       </div>
-      <div className="col-4">
+      <div className="col-4 ps-0">
         <CInput {...roadInputBind} type="text" placeholder="Enter road" />
       </div>
     </div>
