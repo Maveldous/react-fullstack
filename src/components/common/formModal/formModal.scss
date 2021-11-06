@@ -1,0 +1,30 @@
+.form-modal {
+
+  &__wrapper {
+    position: fixed;
+    z-index: 15;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    width: 450px;
+    overflow: auto;
+    padding: 16px 24px;
+    background: #fff;
+  }
+
+  &__header {
+    font-size: 1.8rem;
+    font-weight: 600;
+    margin-bottom: 16px;
+  }
+
+  &__overlay {
+    position: absolute;
+    z-index: 10;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba($color: #000, $alpha: 0.4);
+  }
+}

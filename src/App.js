@@ -1,12 +1,22 @@
+import {
+  BrowserRouter as Router,
+  Routes,
+  Route,
+} from "react-router-dom";
+
 import DefaultLayout from "./layout/defaultLayout.jsx";
-import Page from "./pages/page";
+import ExamplePage from "./pages/example";
 
 import './assets/scss/_index.scss'
 
 function App() {
   return (
     <DefaultLayout>
-      <Page />
+      <Router>
+        <Routes>
+          <Route exact path="/" element={<ExamplePage />} />
+        </Routes>
+      </Router>
     </DefaultLayout>
   );
 }
